@@ -29,7 +29,7 @@ export default class Langlate extends Component {
  * @returns {string}
  */
 function translate(language, text) {
-  if (!text instanceof Object)
+  if (!text instanceof Object || text === undefined)
     throw Error("The property text is not an object.");
   for (let i = 0; i < Object.keys(text).length; i++) {
     const key = Object.keys(text)[i];
