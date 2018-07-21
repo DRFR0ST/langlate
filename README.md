@@ -9,7 +9,7 @@ import Langlate from "../../lib";
 
 class Demo extends React.Component {
   render() {
-    const demo: {
+    const demo = {
         en_US: "Demo shows Langlate in action.",
         pl_PL: "Demonstracja pokazuje Langlate w akcji.",
         de_DE: "Demo zeigt Langlate in Aktion.",
@@ -29,7 +29,8 @@ class Demo extends React.Component {
 render(<Demo />, document.getElementById("app"));
 ```
 
-#### Project is not stable yet!
 
-#### Project is published under the MIT License.
-#### Feel free to copy, modify and publish.
+Project is published under the MIT License.
+Feel free to copy, modify and publish.
+
+Project is not stable yet!
