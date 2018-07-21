@@ -2,7 +2,7 @@
 ### React Component which makes translating easier.
 
 ## Example
-```
+```jsx
 import React from "react";
 import { render } from "react-dom";
 import Langlate from "../../lib";
