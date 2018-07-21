@@ -10,7 +10,7 @@
     "docs": "webpack-dev-server --mode development",
     "docs:prod": "webpack --mode production"
   },
-  "keywords": [],
+  "keywords": ["language", "translation", "internationalization", "international", "multilingual"],
   "license": "MIT",
   "peerDependencies": {
     "react": "^15.3.0 || ^16.2.0",
