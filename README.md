@@ -1,13 +1,31 @@
 # Langlate
 ### React Component which makes translating easier.
 
-[Documentation and Demo](https://drfr0st.github.io/langlate/)
+## Install
+- Download package via `npm i langlate`
+- Import using `import Langlate from 'langlate'` or `var Langlate = require('langlate')`
+
+## Usage
+You can use langlate as a React Component or get the translation returned by the `raw` function.
+
+#### React Component
+`<Langlate text={object} language={string} \>`
+
+#### Function
+`Langlate.raw(object text, string language);`
+
+##### Arguments
+- 'text' contains language keys and corresponding translations.
+- 'language' is the language key.
+
+## Documentation & Demo
+Can be found here - [documentation and demo](https://drfr0st.github.io/langlate/)
 
 ## Example
 ```jsx
 import React from "react";
 import { render } from "react-dom";
-import Langlate from "../../lib";
+import Langlate from "langlate";
 
 class Demo extends React.Component {
   render() {
@@ -39,7 +57,7 @@ class Demo extends React.Component {
 render(<Demo />, document.getElementById("app"));
 ```
 
-Try it yourself on [codesandbox.io](https://codesandbox.io/s/lx2kp45vl9)
+Give it a try on [codesandbox.io](https://codesandbox.io/s/lx2kp45vl9)
 
 Project is published under the MIT License.
 Feel free to use it in any kind of way.
