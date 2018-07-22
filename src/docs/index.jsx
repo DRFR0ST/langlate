@@ -83,13 +83,13 @@ class Demo extends React.Component {
               {Langlate.raw(langlations.plPL, this.state.language)}
             </button>
             <button
-              className={this.state.language === "en_US" ? "de_DE" : ""}
+              className={this.state.language === "de_DE" ? "de_DE" : ""}
               onClick={e => this.setState({ language: "de_DE" })}
             >
               {german}
             </button>
             <button
-              className={this.state.language === "en_US" ? "es_ES" : ""}
+              className={this.state.language === "es_ES" ? "es_ES" : ""}
               onClick={e => this.setState({ language: "es_ES" })}
             >
               <Langlate
