@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 export default class Langlate extends Component {
-
   /**
    * @description Retruns translated text raw.
    * @param {object} text Text translations.
    * @param {string} language Displayed language.
    * @returns {string}
    */
-  static raw(text, language = Object.keys(text)[0]) {
+  static raw(text, language) {
+    if(language === undefined || language === null) { if(text !== undefined) language = Object.keys(text)[0]; else language = "en_US"; }
     return translate(language, text);
   }
 
@@ -29,14 +29,19 @@ export default class Langlate extends Component {
  * @returns {string}
  */
 function translate(language, text) {
-  if (!text instanceof Object || text === undefined)
-    throw Error("The property text is not an object.");
-  for (let i = 0; i < Object.keys(text).length; i++) {
-    const key = Object.keys(text)[i];
-    if (!language) language = key;
-    if (key === language) {
-      return text[key];
+  if (text === undefined || !text instanceof Object) throw Error("The text property is not an object.");
+
+  if (Object.keys(text).length > 0) {
+    if (language === null) language = Object.keys(text)[0];
+    for (let i = 0; i < Object.keys(text).length; i++) {
+      const key = Object.keys(text)[i];
+      if (!language) language = key;
+      if (key === language) {
+        return text[key];
+      }
     }
+  } else {
+    throw Error("The text property is empty.");
   }
 }
 
