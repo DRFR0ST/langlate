@@ -1,6 +1,6 @@
 {
   "name": "langlate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Langlate is a React Component which makes translating easier.",
   "main": "lib/index.js",
   "scripts": {
