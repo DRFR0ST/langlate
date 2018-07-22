@@ -56,7 +56,7 @@ class Demo extends React.Component {
         <div className="container">
           <div className="logo">
             <h1>LANGLATE</h1>
-            <p>Translate easier.</p>
+            <p>translate easier.</p>
           </div>
           <div className="demo">
             <h2>
@@ -83,13 +83,13 @@ class Demo extends React.Component {
               {Langlate.raw(langlations.plPL, this.state.language)}
             </button>
             <button
-              className={this.state.language === "de_DE" ? "de_DE" : ""}
+              className={this.state.language === "de_DE" ? "active" : ""}
               onClick={e => this.setState({ language: "de_DE" })}
             >
               {german}
             </button>
             <button
-              className={this.state.language === "es_ES" ? "es_ES" : ""}
+              className={this.state.language === "es_ES" ? "active" : ""}
               onClick={e => this.setState({ language: "es_ES" })}
             >
               <Langlate
@@ -110,7 +110,7 @@ class Demo extends React.Component {
           <SyntaxHighlighter language="jsx" className="codebox">{`
           import React from "react";
           import { render } from "react-dom";
-          import Langlate from "../../lib";
+          import Langlate from "langlate";
 
           class Demo extends React.Component {
             render() {
