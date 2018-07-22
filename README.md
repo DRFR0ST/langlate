@@ -1,6 +1,8 @@
 # Langlate
 ### React Component which makes translating easier.
 
+[Documentation and Demo](https://drfr0st.github.io/langlate/)
+
 ## Example
 ```jsx
 import React from "react";
@@ -29,8 +31,5 @@ class Demo extends React.Component {
 render(<Demo />, document.getElementById("app"));
 ```
 
-
 Project is published under the MIT License.
-Feel free to copy, modify and publish.
-
-Project is not stable yet!
+Feel free to use it in any kind of way.
