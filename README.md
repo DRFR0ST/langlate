@@ -3,10 +3,10 @@
 
 ## Install
 - Download package via `npm i langlate`
-- Import using `import Langlate from 'langlate'` or `var Langlate = require('langlate')`
+- Import using `var Langlate = require('langlate')` or for ES6 `import Langlate from 'langlate'`
 
 ## Usage
-You can use langlate as a React Component or get the translation returned by the `raw` function.
+You can use langlate as a React Component or get the translation returned by the `raw` method.
 
 #### React Component
 `<Langlate text={object} language={string} \>`
@@ -15,8 +15,8 @@ You can use langlate as a React Component or get the translation returned by the
 `Langlate.raw(object text, string language);`
 
 ##### Arguments
-- 'text' contains language keys and corresponding translations.
-- 'language' is the language key.
+- 'text' contains language keys and corresponding translations. (e.g. `{ en_US: "Hello World" }`)
+- 'language' is the language key. (e.g. `"en_US"`)
 
 ## Documentation & Demo
 Can be found here - [documentation and demo](https://drfr0st.github.io/langlate/)
@@ -36,18 +36,10 @@ class Demo extends React.Component {
         es_ES: "Hola Mundo"
     };
 
-    const howdy = {
-      en_US: "How are you?",
-      pl_PL: "Jak się masz?",
-      de_DE: "Wie gehts dir?",
-      es_ES: "¿Cómo estás?"
-    }
-
     return (
       <div>
         <h2>
           <Langlate language={"en_US"} text={helloWorld} />
-          { Langlate.raw(howdy, "de_DE") }
         </h2>
       </div>
     );
