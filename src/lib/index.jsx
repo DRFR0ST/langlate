@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
+/**
+ * @class
+ * @description React Component which makes translating easier.
+ */
 export default class Langlate extends Component {
   /**
    * @description Retruns translated text raw.
@@ -11,7 +15,7 @@ export default class Langlate extends Component {
   static raw(text, language) {
     if (language === undefined || language === null) {
       if (text !== undefined) language = Object.keys(text)[0];
-      else language = "en_US";
+      else throw Error("The language is not specified.");
     }
     return translate(language, text);
   }

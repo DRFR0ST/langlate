@@ -105,6 +105,9 @@ class Demo extends React.Component {
             language="jsx"
             className="codebox oneline"
           >{`npm i langlate@latest`}</SyntaxHighlighter>
+          <p>
+            Find it on <a target="_blank" href="https://www.npmjs.com/package/langlate">npmjs.com</a>
+          </p>
           <br />
           <h4># Example</h4>
           <SyntaxHighlighter language="jsx" className="codebox">{`
@@ -134,13 +137,16 @@ class Demo extends React.Component {
           render(<Demo />, document.getElementById("app"));
           `}</SyntaxHighlighter>
           <p>
-            Try it yourself on{" "}
+            Give it a try on{" "}
             <a target="_blank" href="https://codesandbox.io/s/lx2kp45vl9">codesandbox.io</a>
+          </p>
+          <p>
+            Contribute on <a target="_blank" href="https://github.com/DRFR0ST/react-langlate">Github</a>
           </p>
         </div>
         <div className="footer">
           Made with <span style={{ color: "#BD0000" }}>❤</span> by{" "}
-          <a href="https://github.com/DRFR0ST">Mike Eling</a>
+          <a href="https://twitter.com/DRFR0ST_">Mike Eling</a>
         </div>
       </React.Fragment>
     );
