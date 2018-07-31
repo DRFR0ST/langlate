@@ -19,7 +19,7 @@ You can use langlate as a React Component or get the translation returned by the
 - 'language' is the language key. (e.g. `"en_US"`)
 
 ## Documentation & Demo
-Can be found here - [documentation and demo](https://drfr0st.github.io/langlate/)
+Can be found here - [documentation and demo](https://drfr0st.github.io/react-langlate/)
 
 ## Example
 ```jsx
