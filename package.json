@@ -1,5 +1,5 @@
 {
-  "name": "langlate",
+  "name": "react-langlate",
   "version": "1.0.0",
   "description": "Langlate is a React Component which makes multilingualism easier.",
   "main": "lib/index.js",
