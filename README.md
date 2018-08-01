@@ -64,3 +64,6 @@ Run just the library:
 
 Deploy the production-ready docs:
 `npm run docs:prod`
+
+Test the library:
+`npm test`
