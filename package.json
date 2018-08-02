@@ -1,13 +1,7 @@
 {
-<<<<<<< HEAD
-  "name": "langlate",
-  "version": "0.1.5",
-  "description": "Langlate is a React Component which makes translating easier.",
-=======
   "name": "react-langlate",
   "version": "1.0.0",
   "description": "Langlate is a React Component which makes multilingualism easier.",
->>>>>>> 8664d2c321b4a457e197e00f1ed9db5d37af0863
   "main": "lib/index.js",
   "scripts": {
     "dev": "concurrently \"npm run lib:watch\" \"npm run docs\"",
